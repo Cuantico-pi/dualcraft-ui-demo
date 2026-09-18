@@ -1,226 +1,173 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang=es>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Dual-Slot Buttons with SVG</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>Botones Dual-Slot Modernos con SVG</title>
+<link rel=stylesheet href=style.css>
 </head>
 <body>
-
-  <div class="buttons-grid">
-
-    <!-- HOME -->
-    <button class="btn-dual home">
-      <span class="btn-text">HOME</span>
-      <span class="btn-icon">
-        <div class="sparkles-container">
-          <span class="sparkle s1"></span>
-          <span class="sparkle s2"></span>
-          <span class="sparkle s3"></span>
-          <span class="sparkle s4"></span>
-          <span class="sparkle s5"></span>
-          <span class="sparkle s6"></span>
-        </div>
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-        </svg>
-      </span>
-    </button>
-
-    <!-- SEARCH -->
-    <button class="btn-dual search">
-      <span class="btn-text">SEARCH</span>
-      <span class="btn-icon">
-        <div class="search-stars">
-          <span class="star st1">✦</span>
-          <span class="star st2">✦</span>
-          <span class="star st3">✦</span>
-        </div>
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-        </svg>
-      </span>
-    </button>
-
-    <!-- LOGIN -->
-    <button class="btn-dual login">
-      <span class="btn-text">LOGIN</span>
-      <span class="btn-icon">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <!-- Shackle / Handle of the padlock -->
-          <path class="lock-hook" d="M12 1a5 5 0 0 0-5 5v3h2V6a3 3 0 0 1 6 0v3h2V6a5 5 0 0 0-5-5z"/>
-          <!-- Padlock body -->
-          <path class="lock-body" d="M6 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2H6zm6 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
-        </svg>
-      </span>
-    </button>
-
-    <!-- VOTE -->
-    <button class="btn-dual vote">
-      <span class="btn-text">VOTE</span>
-      <span class="btn-icon">
-        <svg viewBox="0 0 24 24">
-          <polyline class="check-mark" points="4,12 9,17 20,6" />
-        </svg>
-      </span>
-    </button>
-
-    <!-- BUY -->
-    <button class="btn-dual buy">
-      <span class="btn-text">BUY</span>
-      <span class="btn-icon">
-        <div class="cart-items">
-          <span class="item i1"></span>
-          <span class="item i2"></span>
-          <span class="item i3"></span>
-        </div>
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.45C4.89 14.5 5.37 15 6 15h12v-2H7.42c-.14 0-.25-.11-.25-.25z"/>
-        </svg>
-      </span>
-    </button>
-
-    <!-- DOWNLOAD -->
-    <button class="btn-dual download">
-      <span class="btn-text">DOWNLOAD</span>
-      <span class="btn-icon">
-        <svg viewBox="0 0 24 24">
-          <!-- Arrow pointing down -->
-          <path class="download-arrow" fill="#ffffff" d="M19 9h-4V3H9v6H5l7 7 7-7z" />
-          <!-- Base horizontal line being drawn -->
-          <line class="download-line" x1="4" y1="20" x2="20" y2="20" />
-        </svg>
-      </span>
-    </button>
-
-    <!-- ADD -->
-    <button class="btn-dual add">
-      <span class="btn-text">ADD</span>
-      <span class="btn-icon">
-        <!-- 1. SHOCKWAVE (+ ICON COPY) -->
-        <svg class="plus-shadow" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-        </svg>
-        
-        <!-- 2. The 4 diagonal particles -->
-        <div class="particles">
-          <span class="p-dot p1"></span>
-          <span class="p-dot p2"></span>
-          <span class="p-dot p3"></span>
-          <span class="p-dot p4"></span>
-        </div>
-
-        <!-- 3. THE ORIGINAL + ICON (FRONT) -->
-        <svg class="plus-icon" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-        </svg>
-      </span>
-    </button>
-
-    <!-- NEWS -->
-    <button class="btn-dual news">
-      <span class="btn-text">NEWS</span>
-      <span class="btn-icon">
-        <!-- Flying back pages -->
-        <span class="paper-fly sheet-left"></span>
-        <span class="paper-fly sheet-right"></span>
-
-        <!-- Main news icon -->
-        <svg class="news-main" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2zm-4 8H7v-2h6v2z"/>
-        </svg>
-      </span>
-    </button>
-
-    <!-- SEND -->
-    <button class="btn-dual send">
-      <span class="btn-text">SEND</span>
-      <span class="btn-icon">
-        <div class="send-container">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-          </svg>
-        </div>
-      </span>
-    </button>
-
-    <!-- SHOP -->
-    <button class="btn-dual shop">
-      <span class="btn-text">SHOP</span>
-      <span class="btn-icon">
-        <div class="shop-container">
-          <!-- Top stars / Top sparkles -->
-          <span class="star star-1">✦</span>
-          <span class="star star-2">★</span>
-          <span class="star star-3">✦</span>
-
-          <!-- Rear left bag / Back left bag -->
-          <svg class="bag bag-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path class="bag-bg" d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <path d="M16 10a4 4 0 0 1-8 0"></path>
-          </svg>
-
-          <!-- Rear right bag / Back right bag -->
-          <svg class="bag bag-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path class="bag-bg" d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <path d="M16 10a4 4 0 0 1-8 0"></path>
-          </svg>
-
-          <!-- Main bag (Front) -->
-          <svg class="bag bag-main" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path class="bag-bg" d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <path d="M16 10a4 4 0 0 1-8 0"></path>
-          </svg>
-        </div>
-      </span>
-    </button>
-
-    <!-- SETTINGS -->
-    <button class="btn-dual settings">
-      <span class="btn-text">SETTINGS</span>
-      <span class="btn-icon">
-        <div class="gears-container">
-          <!-- Main gear (Large) -->
-          <svg class="gear gear-main" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"></circle>
-            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-          </svg>
-
-          <!-- Medium gear (Top right) -->
-          <svg class="gear gear-medium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"></circle>
-            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-          </svg>
-
-          <!-- Small gear (Bottom) -->
-          <svg class="gear gear-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"></circle>
-            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-          </svg>
-        </div>
-      </span>
-    </button>
-
-    <!-- DELETE -->
+<div class=buttons-grid>
+<button class="btn-dual home">
+<span class=btn-text>HOME</span>
+<span class=btn-icon>
+<div class=sparkles-container>
+<span class="sparkle s1"></span>
+<span class="sparkle s2"></span>
+<span class="sparkle s3"></span>
+<span class="sparkle s4"></span>
+<span class="sparkle s5"></span>
+<span class="sparkle s6"></span>
+</div>
+<svg viewBox="0 0 24 24" fill=currentColor>
+<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+</svg>
+</span>
+</button>
+<button class="btn-dual search">
+<span class=btn-text>SEARCH</span>
+<span class=btn-icon>
+<div class=search-stars>
+<span class="star st1">✦</span>
+<span class="star st2">✦</span>
+<span class="star st3">✦</span>
+</div>
+<svg viewBox="0 0 24 24" fill=currentColor>
+<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+</svg>
+</span>
+</button>
+<button class="btn-dual login">
+<span class=btn-text>LOGIN</span>
+<span class=btn-icon>
+<svg viewBox="0 0 24 24" fill=currentColor>
+<path class=lock-hook d="M12 1a5 5 0 0 0-5 5v3h2V6a3 3 0 0 1 6 0v3h2V6a5 5 0 0 0-5-5z"/>
+<path class=lock-body d="M6 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2H6zm6 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+</svg>
+</span>
+</button>
+<button class="btn-dual vote">
+<span class=btn-text>VOTE</span>
+<span class=btn-icon>
+<svg viewBox="0 0 24 24">
+<polyline class=check-mark points="4,12 9,17 20,6" />
+</svg>
+</span>
+</button>
+<button class="btn-dual buy">
+<span class=btn-text>BUY</span>
+<span class=btn-icon>
+<div class=cart-items>
+<span class="item i1"></span>
+<span class="item i2"></span>
+<span class="item i3"></span>
+</div>
+<svg viewBox="0 0 24 24" fill=currentColor>
+<path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.45C4.89 14.5 5.37 15 6 15h12v-2H7.42c-.14 0-.25-.11-.25-.25z"/>
+</svg>
+</span>
+</button>
+<button class="btn-dual download">
+<span class=btn-text>DOWNLOAD</span>
+<span class=btn-icon>
+<svg viewBox="0 0 24 24">
+<path class=download-arrow fill=#ffffff d="M19 9h-4V3H9v6H5l7 7 7-7z" />
+<line class=download-line x1=4 y1=20 x2=20 y2=20 />
+</svg>
+</span>
+</button>
+<button class="btn-dual add">
+<span class=btn-text>ADD</span>
+<span class=btn-icon>
+<svg class=plus-shadow viewBox="0 0 24 24">
+<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+</svg>
+<div class=particles>
+<span class="p-dot p1"></span>
+<span class="p-dot p2"></span>
+<span class="p-dot p3"></span>
+<span class="p-dot p4"></span>
+</div>
+<svg class=plus-icon viewBox="0 0 24 24" fill=currentColor>
+<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+</svg>
+</span>
+</button>
+<button class="btn-dual news">
+<span class=btn-text>NEWS</span>
+<span class=btn-icon>
+<span class="paper-fly sheet-left"></span>
+<span class="paper-fly sheet-right"></span>
+<svg class=news-main viewBox="0 0 24 24" fill=currentColor>
+<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2zm-4 8H7v-2h6v2z"/>
+</svg>
+</span>
+</button>
+<button class="btn-dual send">
+<span class=btn-text>SEND</span>
+<span class=btn-icon>
+<div class=send-container>
+<svg viewBox="0 0 24 24" fill=currentColor>
+<path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+</svg>
+</div>
+</span>
+</button>
+<button class="btn-dual shop">
+<span class=btn-text>SHOP</span>
+<span class=btn-icon>
+<div class=shop-container>
+<span class="star star-1">✦</span>
+<span class="star star-2">★</span>
+<span class="star star-3">✦</span>
+<svg class="bag bag-left" viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2>
+<path class=bag-bg d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+<line x1=3 y1=6 x2=21 y2=6></line>
+<path d="M16 10a4 4 0 0 1-8 0"></path>
+</svg>
+<svg class="bag bag-right" viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2>
+<path class=bag-bg d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+<line x1=3 y1=6 x2=21 y2=6></line>
+<path d="M16 10a4 4 0 0 1-8 0"></path>
+</svg>
+<svg class="bag bag-main" viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2>
+<path class=bag-bg d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+<line x1=3 y1=6 x2=21 y2=6></line>
+<path d="M16 10a4 4 0 0 1-8 0"></path>
+</svg>
+</div>
+</span>
+</button>
+<button class="btn-dual settings">
+<span class=btn-text>SETTINGS</span>
+<span class=btn-icon>
+<div class=gears-container>
+<svg class="gear gear-main" viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.8 stroke-linecap=round stroke-linejoin=round>
+<circle cx=12 cy=12 r=3></circle>
+<path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+</svg>
+<svg class="gear gear-medium" viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round>
+<circle cx=12 cy=12 r=3></circle>
+<path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+</svg>
+<svg class="gear gear-small" viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2.2 stroke-linecap=round stroke-linejoin=round>
+<circle cx=12 cy=12 r=3></circle>
+<path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+</svg>
+</div>
+</span>
+</button>
 <button class="btn-dual delete">
-  <span class="btn-text">DELETE</span>
-  <span class="btn-icon">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <!-- Repositioned lid to prevent clipping -->
-      <path class="trash-lid" d="M14 6V5H10V6H6V8H18V6H14Z"/>
-      <!-- Centered trash bin body -->
-      <path class="trash-body" d="M7 20C7 20.55 7.45 21 8 21H16C16.55 21 17 20.55 17 20V9H7V20ZM9 11H11V19H9V11ZM13 11H15V19H13V11Z"/>
-      <!-- Trash bin lid (animated) -->
-      <path class="trash-lid" d="M15 4V3H9v1H4v2h16V4h-5z"/>
-      <!-- Trash bin body -->
-      <path class="trash-body" d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h2v10H8V9zm4 0h2v10h-2V9zm4 0h2v10h-2V9z"/>
-        </svg>
-      </span>
-    </button>
-  </div>
+<span class=btn-text>DELETE</span>
+<span class=btn-icon>
+<svg viewBox="0 0 24 24" fill=currentColor>
+<path class=trash-lid d="M14 6V5H10V6H6V8H18V6H14Z"/>
+<path class=trash-body d="M7 20C7 20.55 7.45 21 8 21H16C16.55 21 17 20.55 17 20V9H7V20ZM9 11H11V19H9V11ZM13 11H15V19H13V11Z"/>
+<path class=trash-lid d="M15 4V3H9v1H4v2h16V4h-5z"/>
+<path class=trash-body d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h2v10H8V9zm4 0h2v10h-2V9zm4 0h2v10h-2V9z"/>
+</svg>
+</span>
+</button>
+</div>
 </body>
 </html>
